@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+ <defs><pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse"><path d="M25 0H0V25" stroke="#626754" stroke-width=".35" opacity=".4"/></pattern><pattern id="stone" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M0 12L12 0" stroke="#818673" stroke-width=".5" opacity=".3"/></pattern></defs>
+ <path fill="url(#grid)" d="M0 0H800V600H0z"/>
+ <g stroke="#838977" stroke-width="1"><path d="M110 75H690M110 65V85M690 65V85M75 110V490M65 110H85M65 490H85"/><path d="M110 94V62M690 94V62" stroke-dasharray="3 5" opacity=".4"/></g>
+ <g stroke="#a4ac93" stroke-width="5"><path d="M110 110H690V490H110z"/><path d="M420 110V325H690M420 325H110M420 325V490"/></g>
+ <path d="M125 340H405V475H125z" fill="url(#stone)" stroke="#717763"/>
+ <g stroke="#848d76" stroke-width="1.5"><path d="M137 135H380V167H137zM137 167H168V280H137zM188 195H310V250H188z"/><path d="M470 135H665V160H470zM640 160V280H665V160M500 205H592V250H500z"/><path d="M480 190V265M612 190V265M500 187H592M500 275H592"/><path d="M145 357H260V460H145zM145 369H260M145 381H260M145 393H260M145 405H260M145 417H260M145 429H260M145 441H260M145 453H260"/></g>
+ <g stroke="#b5bda2" stroke-width="1.5"><path d="M110 175V290M118 175V290M144 110H365M144 118H365M485 110H640M485 118H640M690 365V460M682 365V460M475 490H640M475 482H640"/></g>
+ <path d="M444 345H670V470H444z" fill="#737e5c" fill-opacity=".08" stroke="#69745a" stroke-dasharray="3 4"/>
+ <g stroke="#7d886b" stroke-width="1.5"><circle cx="565" cy="405" r="39"/><circle cx="565" cy="405" r="28"/><path d="M546 427L581 383M538 392L588 419M566 370L563 441"/><path d="M290 375H380V460H290zM300 385H370V450H300z"/></g>
+ <g fill="#b2b3a9" font-family="sans-serif" font-size="10" letter-spacing="2" text-anchor="middle"><text x="246" y="300">LIVING</text><text x="555" y="300">KITCHEN / DINING</text><text x="280" y="515">ENTRY / STAIR</text><text x="560" y="515">OPEN COURTYARD</text></g>
+ <path d="M420 270V320" stroke="#151713" stroke-width="9"/><path d="M420 270H467M467 270A47 47 0 0 1 420 317" stroke="#8c947e"/>
+</svg>

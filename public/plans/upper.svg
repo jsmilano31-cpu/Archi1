@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+ <defs><pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse"><path d="M25 0H0V25" stroke="#626754" stroke-width=".35" opacity=".4"/></pattern><pattern id="void" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M0 12L12 0" stroke="#818673" stroke-width=".5" opacity=".3"/></pattern></defs>
+ <path fill="url(#grid)" d="M0 0H800V600H0z"/>
+ <g stroke="#838977"><path d="M110 75H690M110 65V85M690 65V85M75 110V490M65 110H85M65 490H85"/></g>
+ <g stroke="#a4ac93" stroke-width="5"><path d="M110 110H690V490H110zM420 110V490M420 325H690M110 325H420"/></g>
+ <g stroke="#848d76" stroke-width="1.5"><path d="M145 138H315V265H145zM145 155H315M158 143H218V178H158zM238 143H300V178H238zM340 140H390V280H340z"/><path d="M475 135H630V265H475zM475 152H630M490 141H545V177H490zM565 141H618V177H565zM646 135H667V280H646z"/><path d="M145 357H260V460H145zM145 369H260M145 381H260M145 393H260M145 405H260M145 417H260M145 429H260M145 441H260M145 453H260M470 355H660V385H470zM505 425H625V450H505z"/></g>
+ <path d="M280 345H401V475H280z" fill="url(#void)" stroke="#717763" stroke-dasharray="4 4"/>
+ <g stroke="#b5bda2" stroke-width="1.5"><path d="M110 175V290M118 175V290M144 110H365M144 118H365M485 110H640M485 118H640M690 365V460M682 365V460M475 490H640M475 482H640"/></g>
+ <g fill="#b2b3a9" font-family="sans-serif" font-size="10" letter-spacing="2" text-anchor="middle"><text x="246" y="300">PRIMARY SUITE</text><text x="555" y="300">GUEST ROOM</text><text x="275" y="515">LANDING / VOID</text><text x="560" y="515">STUDY</text></g>
+ <path d="M420 270V320M420 400V450" stroke="#151713" stroke-width="9"/><path d="M420 270H467M467 270A47 47 0 0 1 420 317M420 400H467M467 400A47 47 0 0 1 420 447" stroke="#8c947e"/>
+</svg>
