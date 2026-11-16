@@ -7,7 +7,7 @@ import sharp from "sharp";
 import { cleanup, fireEvent, render, within } from "@testing-library/react";
 import { FloorPlans, floorPlans } from "../src/components/FloorPlans";
 import { ResidenceExplorer, SpaceGallery } from "../src/components/ResidenceExplorer";
-import { spaces, images } from "../src/data/project";
+import { spaces } from "../src/data/project";
 
 afterEach(cleanup);
 HTMLElement.prototype.scrollIntoView = function () {};
@@ -31,22 +31,27 @@ test("both floor plans preserve source checksums, dimensions, previews, and vali
     for (const id of plan.roomIds) assert.ok(spaces.some((space) => space.id === id));
   }
 });
-test("every plan room opens its first perspective and clears a previous category filter", () => {
+test("floor room lists are static and leave the independent gallery selection unchanged", () => {
   const view = presentation();
   for (const plan of floorPlans) {
     fireEvent.click(view.getByRole("button", { name: `${plan.title} ${plan.japanese}` }));
-    const roomList = within(view.getByRole("complementary", { name: `${plan.title} rooms` }));
-    for (const id of plan.roomIds) {
-      fireEvent.click(view.getByRole("button", { name: "Outdoor & details" }));
+    const aside = view.getByRole("complementary", { name: `${plan.title} rooms` });
+    const roomList = within(aside);
+    assert.equal(roomList.queryAllByRole("link").length, 0);
+    assert.equal(roomList.queryAllByRole("button").length, 0);
+    assert.equal(aside.querySelectorAll("svg,[tabindex]").length, 0);
+    const rows = roomList.getAllByRole("listitem");
+    assert.equal(rows.length, plan.roomIds.length);
+    for (const [index, id] of plan.roomIds.entries()) {
       const room = spaces.find((space) => space.id === id)!;
-      fireEvent.click(roomList.getByRole("link", { name: `${room.name} ${room.japanese}` }));
-      const image = images.find((item) => item.spaceId === id)!;
-      assert.equal((view.getByRole("combobox") as HTMLSelectElement).value, id);
-      assert.ok(view.getByRole("button", { name: `Enlarge: ${image.caption}` }));
-      assert.equal(view.getByRole("button", { name: "All spaces" }).getAttribute("aria-pressed"), "true");
+      assert.ok(rows[index].textContent?.includes(room.name));
+      assert.ok(rows[index].textContent?.includes(room.japanese));
+      fireEvent.click(rows[index]);
+      assert.equal((view.getByRole("combobox") as HTMLSelectElement).value, "living");
     }
   }
 });
+
 test("plan viewer loads originals on demand, limits zoom, resets between floors and restores focus", () => {
   const view = presentation();
   assert.equal(view.container.querySelectorAll('img[src$="-original.png"]').length, 0);

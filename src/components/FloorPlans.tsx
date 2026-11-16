@@ -1,11 +1,10 @@
 "use client";
 import { useRef, useState } from "react";
-import { ArrowUpRight, Expand, Minus, Plus, X } from "lucide-react";
+import { Expand, Minus, Plus, X } from "lucide-react";
 import plans from "@/data/floorplans.json";
 import { spaces } from "@/data/project";
 import type { FloorPlan } from "@/types/architecture";
 import { MediaImage } from "./MediaImage";
-import { useResidenceExplorer } from "./ResidenceExplorer";
 
 export const floorPlans: FloorPlan[] = plans;
 export function FloorPlans() {
@@ -15,7 +14,6 @@ export function FloorPlans() {
   const dialog = useRef<HTMLDialogElement>(null);
   const opener = useRef<HTMLButtonElement>(null);
   const viewport = useRef<HTMLDivElement>(null);
-  const { selectSpace } = useResidenceExplorer();
   const plan = floorPlans[floor];
   function reset() {
     setZoom(1);
@@ -44,15 +42,15 @@ export function FloorPlans() {
       <aside className="floorplan-rooms" aria-label={`${plan.title} rooms`}>
         <span className="eyebrow">From layout to living</span>
         <h3>Step into a space.</h3>
-        <p>Select a room to discover its perspectives.</p>
-        <div className="floorplan-room-links">
+        <p>Spaces included on this floor.</p>
+        <ul className="floorplan-room-list">
           {plan.roomIds.map((id) => {
             const room = spaces.find((item) => item.id === id)!;
-            return <a key={id} href="#floorplans" onClick={(event) => { event.preventDefault(); selectSpace(id); }}>
-              <span>{room.name} <small lang="ja">{room.japanese}</small></span><ArrowUpRight size={15} />
-            </a>;
+            return <li key={id}>
+              <span>{room.name} <small lang="ja">{room.japanese}</small></span>
+            </li>;
           })}
-        </div>
+        </ul>
       </aside>
     </div>
     <dialog ref={dialog} className="plan-dialog" aria-label="Floor plan viewer" onClose={() => { setOpened(false); reset(); opener.current?.focus(); }} onClick={(event) => { if (event.target === event.currentTarget) dialog.current?.close(); }}>

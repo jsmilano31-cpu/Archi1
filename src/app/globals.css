@@ -1128,10 +1128,9 @@ svg {
 .floorplan-rooms .eyebrow { color: var(--ink); }
 .floorplan-rooms h3 { margin: 14px 0; font-size: 34px; }
 .floorplan-rooms p { font-size: 12px; margin-bottom: 20px; }
-.floorplan-room-links { display: grid; }
-.floorplan-room-links a { display: flex; align-items: center; justify-content: space-between; gap: 12px; border-bottom: 1px solid #252b2333; min-height: 54px; padding: 9px 0; font-size: 12px; }
-.floorplan-room-links small { display: block; font-size: 10px; opacity: .75; }
-.floorplan-room-links a:hover { color: #67692d; }
+.floorplan-room-list { display: grid; list-style: none; padding: 0; margin: 0; }
+.floorplan-room-list li { display: flex; align-items: center; justify-content: space-between; gap: 12px; border-bottom: 1px solid #252b2333; min-height: 54px; padding: 9px 0; font-size: 12px; }
+.floorplan-room-list small { display: block; font-size: 10px; opacity: .75; }
 .plan-dialog { position: fixed; inset: 0; margin: auto; width: min(1400px, 96vw); height: 94svh; max-width: 100vw; max-height: 100svh; padding: 20px; border: 1px solid var(--line); color: var(--paper); background: var(--canvas); }
 .plan-dialog[open] { display: flex; flex-direction: column; gap: 12px; }
 .plan-dialog::backdrop { background: #080d08e8; }
@@ -1146,7 +1145,7 @@ svg {
 .plan-viewer-hint { font-size: 11px; }
 @media (max-width: 900px) {
   .floorplan-layout { grid-template-columns: 1fr; }
-  .floorplan-room-links { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 20px; }
+  .floorplan-room-list { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 20px; }
   .plan-dialog { width: 100%; height: 100svh; padding: 14px; }
   .plan-dialog-header .eyebrow { font-size: 9px; }
   .floor-selector button { padding: 10px 14px; }

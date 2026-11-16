@@ -7,6 +7,6 @@ Original room labels are normalized only for presentation (for example, Walking 
 
 ## Supplied floor plans
 
-The two 2560 × 1920 PNGs from `FLOOR PLANSS` are presented separately from the 48 perspectives. `src/data/floorplans.json` and `public/floorplans/manifest.json` record the source filenames, SHA-256 checksums, dimensions, and room links. Their embedded labels and artwork are preserved, including source spelling.
+The two 2560 × 1920 PNGs from `FLOOR PLANSS` are presented separately from the 48 perspectives. `src/data/floorplans.json` and `public/floorplans/manifest.json` record the source filenames, SHA-256 checksums, dimensions, and room associations. Their embedded labels and artwork are preserved, including source spelling.
 Website previews use 640/1280/1920px WebP at quality 90. Unchanged original PNG copies load in the enlarged viewer only when opened. Regenerate with `node scripts/import-floorplans.mjs "C:/Users/Windows 11/Downloads/FLOOR PLANSS"`.
-Floor associations come from these supplied plans: the primary suite and Bedroom 1 are on the ground floor; Bedrooms 2–4, bar, hallway, upper bathroom and balcony are on the second floor. The staircase is linked from both. Room links lead to the existing render groups; no room boundaries or dimensions are inferred.
+Floor associations come from these supplied plans: the primary suite and Bedroom 1 are on the ground floor; Bedrooms 2–4, bar, hallway, upper bathroom and balcony are on the second floor. The staircase is listed on both. Room names are informational; no room boundaries or dimensions are inferred.
