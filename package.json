@@ -1,8 +1,10 @@
 {
-  "name": "courtyard-house",
+  "name": "residence-presentation",
   "version": "1.0.0",
   "private": true,
-  "engines": { "node": "24.x" },
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "next dev --hostname 0.0.0.0",
     "build": "next build",
@@ -10,8 +12,7 @@
     "start": "serve out -l 3000",
     "lint": "eslint . --max-warnings 0",
     "typecheck": "tsc --noEmit",
-    "test": "tsx --test tests/*.test.ts tests/*.test.tsx",
-    "assets:optimize": "node scripts/optimize-assets.mjs"
+    "test": "tsx --test tests/*.test.ts tests/*.test.tsx"
   },
   "overrides": {
     "@typescript-eslint/typescript-estree": {
@@ -20,14 +21,11 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
-    "@react-three/drei": "^10.7.7",
-    "@react-three/fiber": "^9.4.0",
     "gsap": "^3.14.2",
     "lucide-react": "^0.468.0",
     "next": "^16.0.0",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "three": "^0.180.0"
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.1.0",
@@ -36,7 +34,6 @@
     "@types/node": "^22.0.0",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
-    "@types/three": "^0.180.0",
     "eslint": "^9.0.0",
     "eslint-config-next": "^16.0.0",
     "jsdom": "^31.0.1",

@@ -1,34 +1,83 @@
-'use client';
-
-import { useRef } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useGSAP } from '@gsap/react';
-
+"use client";
+import { useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(ScrollTrigger, useGSAP);
-
 export function Motion({ children }: { children: React.ReactNode }) {
   const root = useRef<HTMLDivElement>(null);
-  useGSAP(() => {
-    const connection = (navigator as Navigator & { connection?: { saveData?: boolean } }).connection;
-    if (connection?.saveData) return;
-    const mm = gsap.matchMedia();
-    mm.add('(prefers-reduced-motion: no-preference)', () => {
-      gsap.from('.hero-title > span', { y: 40, autoAlpha: 0, stagger: 0.13, duration: 1.1, ease: 'power3.out' });
-      gsap.from('.hero-media', { scale: 1.035, duration: 2, ease: 'power2.out' });
-      gsap.utils.toArray<HTMLElement>('[data-reveal]').forEach((element) => {
-        gsap.from(element, { y: 26, autoAlpha: 0, duration: 0.85, ease: 'power3.out', scrollTrigger: { trigger: element, start: 'top 94%', once: true } });
+  useGSAP(
+    () => {
+      const connection = (
+        navigator as Navigator & { connection?: { saveData?: boolean } }
+      ).connection;
+      if (connection?.saveData) return;
+      const mm = gsap.matchMedia();
+      mm.add("(prefers-reduced-motion: no-preference)", () => {
+        gsap.from(".hero-copy > *", {
+          y: 20,
+          opacity: 0,
+          duration: 0.9,
+          stagger: 0.12,
+          ease: "power3.out",
+        });
+        gsap.utils
+          .toArray<HTMLElement>("[data-reveal]")
+          .forEach((el) =>
+            gsap.from(el, {
+              y: 22,
+              opacity: 0,
+              duration: 0.75,
+              ease: "power3.out",
+              scrollTrigger: { trigger: el, start: "top 95%", once: true },
+            }),
+          );
       });
-    });
-    mm.add('(min-width: 1200px) and (min-height: 700px) and (pointer: fine) and (prefers-reduced-motion: no-preference)', () => {
-      const chapter = root.current?.querySelector('.exterior-scene');
-      if (!chapter) return;
-      gsap.fromTo('.exterior-scene .scene-media', { scale: 1.04 }, { scale: 1, ease: 'none', scrollTrigger: { trigger: chapter, start: 'top top', end: '+=28%', pin: true, scrub: 0.8, invalidateOnRefresh: true } });
-    });
-    const refresh = () => ScrollTrigger.refresh();
-    window.addEventListener('load', refresh);
-    document.fonts.ready.then(refresh);
-    return () => { window.removeEventListener('load', refresh); mm.revert(); };
-  }, { scope: root });
+      mm.add(
+        "(min-width:1200px) and (min-height:720px) and (pointer:fine) and (prefers-reduced-motion:no-preference)",
+        () => {
+          const chapter = root.current?.querySelector(".arrival-sequence");
+          const scenes = gsap.utils.toArray<HTMLElement>(".arrival-scene");
+          if (!chapter || scenes.length < 2) return;
+          gsap.set(chapter, { height: "90svh" });
+          gsap.set(scenes, { position: "absolute", inset: 0, height: "100%" });
+          gsap.set(scenes.slice(1), { autoAlpha: 0 });
+          const tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: chapter,
+              start: "top 76px",
+              end: () => "+=" + window.innerHeight * 1.8,
+              scrub: 0.6,
+              pin: true,
+              invalidateOnRefresh: true,
+            },
+          });
+          scenes.slice(1).forEach((scene, index) => {
+            tl.to(scenes[index], { autoAlpha: 0, duration: 0.65 }).to(
+              scene,
+              { autoAlpha: 1, duration: 0.65 },
+              "<",
+            );
+          });
+        },
+      );
+      let disposed = false;
+      const refresh = () => {
+        if (!disposed) ScrollTrigger.refresh();
+      };
+      const loaded = (event: Event) => {
+        if (event.target instanceof HTMLImageElement) refresh();
+      };
+      const element = root.current;
+      element?.addEventListener("load", loaded, true);
+      document.fonts?.ready.then(refresh);
+      return () => {
+        disposed = true;
+        element?.removeEventListener("load", loaded, true);
+        mm.revert();
+      };
+    },
+    { scope: root },
+  );
   return <div ref={root}>{children}</div>;
 }

@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "2nd-floor-t-b-area-1",
+    "sourceFilename": "2ND FLOOR T & B AREA 1.png",
+    "sourceSha256": "b2be17a7806214e3242ec8e3de00a4719a69772d1ba8034c0bc0415f275444b0",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "upper-bath",
+    "spaceName": "Second-floor bathroom",
+    "japanese": "2階バスルーム",
+    "category": "Bathrooms & utility",
+    "view": 1,
+    "caption": "Second-floor bathroom — View 01",
+    "alt": "Second-floor bathroom, supplied architectural render, perspective 1.",
+    "src": "/residence/2nd-floor-t-b-area-1-1280.webp",
+    "fullSrc": "/residence/2nd-floor-t-b-area-1-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/2nd-floor-t-b-area-1-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/2nd-floor-t-b-area-1-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/2nd-floor-t-b-area-1-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "2nd-floort-b-area-2",
+    "sourceFilename": "2ND FLOORT & B AREA 2.png",
+    "sourceSha256": "e4fa2c7e66096ac64e791b2c57c029b37bc0c1f3e010476bda9f0aef5726433e",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "upper-bath",
+    "spaceName": "Second-floor bathroom",
+    "japanese": "2階バスルーム",
+    "category": "Bathrooms & utility",
+    "view": 2,
+    "caption": "Second-floor bathroom — View 02",
+    "alt": "Second-floor bathroom, supplied architectural render, perspective 2.",
+    "src": "/residence/2nd-floort-b-area-2-1280.webp",
+    "fullSrc": "/residence/2nd-floort-b-area-2-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/2nd-floort-b-area-2-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/2nd-floort-b-area-2-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/2nd-floort-b-area-2-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "aesthetics-1",
+    "sourceFilename": "AESTHETICS 1.png",
+    "sourceSha256": "498ecb4b758ef5234df2ea4814141be2ef3b68eee8f443675e878cc26548157b",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "facade-detail",
+    "spaceName": "Facade detail",
+    "japanese": "外観のディテール",
+    "category": "Outdoor & details",
+    "view": 1,
+    "caption": "Facade detail — View 01",
+    "alt": "Facade detail, supplied architectural render, perspective 1.",
+    "src": "/residence/aesthetics-1-1280.webp",
+    "fullSrc": "/residence/aesthetics-1-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/aesthetics-1-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/aesthetics-1-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/aesthetics-1-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "balcony-1",
+    "sourceFilename": "BALCONY 1.png",
+    "sourceSha256": "b0fedc80d9079a4a7fe0b4878b05c31ac957b3fe81f0b7a41fbb1090eb9c94c4",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "balcony",
+    "spaceName": "Balcony",
+    "japanese": "バルコニー",
+    "category": "Outdoor & details",
+    "view": 1,
+    "caption": "Balcony — View 01",
+    "alt": "Balcony, supplied architectural render, perspective 1.",
+    "src": "/residence/balcony-1-1280.webp",
+    "fullSrc": "/residence/balcony-1-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/balcony-1-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/balcony-1-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/balcony-1-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "balcony-2",
+    "sourceFilename": "BALCONY 2.png",
+    "sourceSha256": "101ee1dd0af81ebe1278962275967adbe1ed974117c66a8ba0590cecb3793c9d",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "balcony",
+    "spaceName": "Balcony",
+    "japanese": "バルコニー",
+    "category": "Outdoor & details",
+    "view": 2,
+    "caption": "Balcony — View 02",
+    "alt": "Balcony, supplied architectural render, perspective 2.",
+    "src": "/residence/balcony-2-1280.webp",
+    "fullSrc": "/residence/balcony-2-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/balcony-2-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/balcony-2-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/balcony-2-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "balcony-3-1",
+    "sourceFilename": "BALCONY 3(1).png",
+    "sourceSha256": "4dda9605f2ba266ac79d7b52433170726e32cbab15c67035ca1ce3bb3d8acd9e",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "balcony",
+    "spaceName": "Balcony",
+    "japanese": "バルコニー",
+    "category": "Outdoor & details",
+    "view": 3,
+    "caption": "Balcony — View 03",
+    "alt": "Balcony, supplied architectural render, perspective 3.",
+    "src": "/residence/balcony-3-1-1280.webp",
+    "fullSrc": "/residence/balcony-3-1-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/balcony-3-1-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/balcony-3-1-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/balcony-3-1-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "balcony-3",
+    "sourceFilename": "BALCONY 3.png",
+    "sourceSha256": "d53e1504b8d74e75cf29f6f4266349a0fb9541ed2b61aec2972d20ae6eb6357d",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "balcony",
+    "spaceName": "Balcony",
+    "japanese": "バルコニー",
+    "category": "Outdoor & details",
+    "view": 4,
+    "caption": "Balcony — View 04",
+    "alt": "Balcony, supplied architectural render, perspective 4.",
+    "src": "/residence/balcony-3-1280.webp",
+    "fullSrc": "/residence/balcony-3-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/balcony-3-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/balcony-3-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/balcony-3-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "bar-area-1",
+    "sourceFilename": "BAR AREA 1.png",
+    "sourceSha256": "9a142c416a3f47bccbe3da3fc2e1b78a175288075912d0b34c9743824a131a68",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "bar",
+    "spaceName": "Bar lounge",
+    "japanese": "バーラウンジ",
+    "category": "Shared spaces",
+    "view": 1,
+    "caption": "Bar lounge — View 01",
+    "alt": "Bar lounge, supplied architectural render, perspective 1.",
+    "src": "/residence/bar-area-1-1280.webp",
+    "fullSrc": "/residence/bar-area-1-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/bar-area-1-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/bar-area-1-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/bar-area-1-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "bar-area-2",
+    "sourceFilename": "BAR AREA 2.png",
+    "sourceSha256": "64fd6db257cfb07eb6460454483fd87541fd7385c0716b0e5ee014076f24209e",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "bar",
+    "spaceName": "Bar lounge",
+    "japanese": "バーラウンジ",
+    "category": "Shared spaces",
+    "view": 2,
+    "caption": "Bar lounge — View 02",
+    "alt": "Bar lounge, supplied architectural render, perspective 2.",
+    "src": "/residence/bar-area-2-1280.webp",
+    "fullSrc": "/residence/bar-area-2-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/bar-area-2-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/bar-area-2-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/bar-area-2-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "bedroom-1-area-1",
+    "sourceFilename": "BEDROOM 1 AREA 1.png",
+    "sourceSha256": "9ef34a314886c615415d807f4ca09d9e75232edc9211b3b760d57fd521b3e3c4",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "bedroom-1",
+    "spaceName": "Bedroom 1",
+    "japanese": "寝室 1",
+    "category": "Private spaces",
+    "view": 1,
+    "caption": "Bedroom 1 — View 01",
+    "alt": "Bedroom 1, supplied architectural render, perspective 1.",
+    "src": "/residence/bedroom-1-area-1-1280.webp",
+    "fullSrc": "/residence/bedroom-1-area-1-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/bedroom-1-area-1-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/bedroom-1-area-1-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/bedroom-1-area-1-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "bedroom-1-area-2",
+    "sourceFilename": "BEDROOM 1 AREA 2.png",
+    "sourceSha256": "ae15326e4b7f27cc41feead9699621f8ceb23f53be3c41a6b331b5b788dc4810",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "bedroom-1",
+    "spaceName": "Bedroom 1",
+    "japanese": "寝室 1",
+    "category": "Private spaces",
+    "view": 2,
+    "caption": "Bedroom 1 — View 02",
+    "alt": "Bedroom 1, supplied architectural render, perspective 2.",
+    "src": "/residence/bedroom-1-area-2-1280.webp",
+    "fullSrc": "/residence/bedroom-1-area-2-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/bedroom-1-area-2-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/bedroom-1-area-2-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/bedroom-1-area-2-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "bedroom-2-area-1",
+    "sourceFilename": "BEDROOM 2 AREA 1.png",
+    "sourceSha256": "3f93208db0b8426162233786bb15f6185557211165ff8898c4132eba5d76ce24",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "bedroom-2",
+    "spaceName": "Bedroom 2",
+    "japanese": "寝室 2",
+    "category": "Private spaces",
+    "view": 1,
+    "caption": "Bedroom 2 — View 01",
+    "alt": "Bedroom 2, supplied architectural render, perspective 1.",
+    "src": "/residence/bedroom-2-area-1-1280.webp",
+    "fullSrc": "/residence/bedroom-2-area-1-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/bedroom-2-area-1-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/bedroom-2-area-1-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/bedroom-2-area-1-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "bedroom-2-area-2",
+    "sourceFilename": "BEDROOM 2 AREA 2.png",
+    "sourceSha256": "7c6a28b77b69ac338d0e00dc76151148a15dddc88ee90c85c12bc273830c9bed",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "bedroom-2",
+    "spaceName": "Bedroom 2",
+    "japanese": "寝室 2",
+    "category": "Private spaces",
+    "view": 2,
+    "caption": "Bedroom 2 — View 02",
+    "alt": "Bedroom 2, supplied architectural render, perspective 2.",
+    "src": "/residence/bedroom-2-area-2-1280.webp",
+    "fullSrc": "/residence/bedroom-2-area-2-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/bedroom-2-area-2-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/bedroom-2-area-2-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/bedroom-2-area-2-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "bedroom-3-area-1",
+    "sourceFilename": "BEDROOM 3 AREA 1.png",
+    "sourceSha256": "c7afb67da045afe72046c9ab36fac57767cbd1f6057185129f08d488170d7dc0",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "bedroom-3",
+    "spaceName": "Bedroom 3",
+    "japanese": "寝室 3",
+    "category": "Private spaces",
+    "view": 1,
+    "caption": "Bedroom 3 — View 01",
+    "alt": "Bedroom 3, supplied architectural render, perspective 1.",
+    "src": "/residence/bedroom-3-area-1-1280.webp",
+    "fullSrc": "/residence/bedroom-3-area-1-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/bedroom-3-area-1-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/bedroom-3-area-1-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/bedroom-3-area-1-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "bedroom-3-area-2",
+    "sourceFilename": "BEDROOM 3 AREA 2.png",
+    "sourceSha256": "92bba25f578efd053c63ce4d1c454e22b7b1e35ce66665309122bf37c83539ee",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "bedroom-3",
+    "spaceName": "Bedroom 3",
+    "japanese": "寝室 3",
+    "category": "Private spaces",
+    "view": 2,
+    "caption": "Bedroom 3 — View 02",
+    "alt": "Bedroom 3, supplied architectural render, perspective 2.",
+    "src": "/residence/bedroom-3-area-2-1280.webp",
+    "fullSrc": "/residence/bedroom-3-area-2-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/bedroom-3-area-2-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/bedroom-3-area-2-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/bedroom-3-area-2-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "bedroom-4-area-1",
+    "sourceFilename": "BEDROOM 4 AREA 1.png",
+    "sourceSha256": "5284430e3ae10f5f771bf84f932c205966f6aaf8701fac6166791a3d5f2d4f51",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "bedroom-4",
+    "spaceName": "Bedroom 4",
+    "japanese": "寝室 4",
+    "category": "Private spaces",
+    "view": 1,
+    "caption": "Bedroom 4 — View 01",
+    "alt": "Bedroom 4, supplied architectural render, perspective 1.",
+    "src": "/residence/bedroom-4-area-1-1280.webp",
+    "fullSrc": "/residence/bedroom-4-area-1-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/bedroom-4-area-1-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/bedroom-4-area-1-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/bedroom-4-area-1-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "bedroom-4-area-2",
+    "sourceFilename": "BEDROOM 4 AREA 2.png",
+    "sourceSha256": "5aa7e7027739170fd6ddea164701a7f95b4cf255e517bd325c45810719b489b4",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "bedroom-4",
+    "spaceName": "Bedroom 4",
+    "japanese": "寝室 4",
+    "category": "Private spaces",
+    "view": 2,
+    "caption": "Bedroom 4 — View 02",
+    "alt": "Bedroom 4, supplied architectural render, perspective 2.",
+    "src": "/residence/bedroom-4-area-2-1280.webp",
+    "fullSrc": "/residence/bedroom-4-area-2-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/bedroom-4-area-2-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/bedroom-4-area-2-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/bedroom-4-area-2-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "car-garage-1",
+    "sourceFilename": "CAR GARAGE 1.png",
+    "sourceSha256": "9fad4bdb44afefe6fe7b773f2ff7266474fbc50bd0a1b7d85ea1e75f28ef7665",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "garage",
+    "spaceName": "Covered garage",
+    "japanese": "ガレージ",
+    "category": "Arrival",
+    "view": 1,
+    "caption": "Covered garage — View 01",
+    "alt": "Covered garage, supplied architectural render, perspective 1.",
+    "src": "/residence/car-garage-1-1280.webp",
+    "fullSrc": "/residence/car-garage-1-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/car-garage-1-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/car-garage-1-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/car-garage-1-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "car-garage-2",
+    "sourceFilename": "CAR GARAGE 2.png",
+    "sourceSha256": "9d958f4d318d87693a447ba6b4e5aead3c7b5d430e9c26dca1f93cd026c24f11",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "garage",
+    "spaceName": "Covered garage",
+    "japanese": "ガレージ",
+    "category": "Arrival",
+    "view": 2,
+    "caption": "Covered garage — View 02",
+    "alt": "Covered garage, supplied architectural render, perspective 2.",
+    "src": "/residence/car-garage-2-1280.webp",
+    "fullSrc": "/residence/car-garage-2-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/car-garage-2-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/car-garage-2-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/car-garage-2-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "common-toilet-and-bath-area-1",
+    "sourceFilename": "COMMON TOILET AND BATH AREA 1.png",
+    "sourceSha256": "ce6f65a383d9930130848745b1278adaab2acb596d3b3861cd882b99c7003ad6",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "common-bath",
+    "spaceName": "Common bathroom",
+    "japanese": "共用バスルーム",
+    "category": "Bathrooms & utility",
+    "view": 1,
+    "caption": "Common bathroom — View 01",
+    "alt": "Common bathroom, supplied architectural render, perspective 1.",
+    "src": "/residence/common-toilet-and-bath-area-1-1280.webp",
+    "fullSrc": "/residence/common-toilet-and-bath-area-1-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/common-toilet-and-bath-area-1-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/common-toilet-and-bath-area-1-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/common-toilet-and-bath-area-1-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "common-toilet-and-bath-area-2",
+    "sourceFilename": "COMMON TOILET AND BATH AREA 2.png",
+    "sourceSha256": "01f5ef0e5ed0cddd4206e3235053536e910a2d97aa7361e53f85c8d255bc227e",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "common-bath",
+    "spaceName": "Common bathroom",
+    "japanese": "共用バスルーム",
+    "category": "Bathrooms & utility",
+    "view": 2,
+    "caption": "Common bathroom — View 02",
+    "alt": "Common bathroom, supplied architectural render, perspective 2.",
+    "src": "/residence/common-toilet-and-bath-area-2-1280.webp",
+    "fullSrc": "/residence/common-toilet-and-bath-area-2-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/common-toilet-and-bath-area-2-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/common-toilet-and-bath-area-2-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/common-toilet-and-bath-area-2-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "dining-area-1",
+    "sourceFilename": "DINING AREA 1.png",
+    "sourceSha256": "bab45360e00956cdefdc20f1b16b5892c8d9b1a31c252778747b5a3a01998c44",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "dining",
+    "spaceName": "Dining room",
+    "japanese": "ダイニング",
+    "category": "Shared spaces",
+    "view": 1,
+    "caption": "Dining room — View 01",
+    "alt": "Dining room, supplied architectural render, perspective 1.",
+    "src": "/residence/dining-area-1-1280.webp",
+    "fullSrc": "/residence/dining-area-1-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/dining-area-1-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/dining-area-1-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/dining-area-1-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "dining-area-2",
+    "sourceFilename": "DINING AREA 2.png",
+    "sourceSha256": "a275f3770dca767dc71b8817b5d8cab89294c731369dc9720f484f5c04d10596",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "dining",
+    "spaceName": "Dining room",
+    "japanese": "ダイニング",
+    "category": "Shared spaces",
+    "view": 2,
+    "caption": "Dining room — View 02",
+    "alt": "Dining room, supplied architectural render, perspective 2.",
+    "src": "/residence/dining-area-2-1280.webp",
+    "fullSrc": "/residence/dining-area-2-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/dining-area-2-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/dining-area-2-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/dining-area-2-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "dirty-kitchen-area-1",
+    "sourceFilename": "DIRTY KITCHEN AREA 1.png",
+    "sourceSha256": "bef1efc37cbe38842f5acc951808eddf50c3b04ab9066cd8549075168269ca5a",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "secondary-kitchen",
+    "spaceName": "Secondary kitchen",
+    "japanese": "セカンドキッチン",
+    "category": "Bathrooms & utility",
+    "view": 1,
+    "caption": "Secondary kitchen — View 01",
+    "alt": "Secondary kitchen, supplied architectural render, perspective 1.",
+    "src": "/residence/dirty-kitchen-area-1-1280.webp",
+    "fullSrc": "/residence/dirty-kitchen-area-1-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/dirty-kitchen-area-1-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/dirty-kitchen-area-1-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/dirty-kitchen-area-1-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "dirty-kitchen-area-2",
+    "sourceFilename": "DIRTY KITCHEN AREA 2.png",
+    "sourceSha256": "438c47f4ac208ea2c415bb3673b40250e5409ab2d06cd5e1a8dde59764c37996",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "secondary-kitchen",
+    "spaceName": "Secondary kitchen",
+    "japanese": "セカンドキッチン",
+    "category": "Bathrooms & utility",
+    "view": 2,
+    "caption": "Secondary kitchen — View 02",
+    "alt": "Secondary kitchen, supplied architectural render, perspective 2.",
+    "src": "/residence/dirty-kitchen-area-2-1280.webp",
+    "fullSrc": "/residence/dirty-kitchen-area-2-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/dirty-kitchen-area-2-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/dirty-kitchen-area-2-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/dirty-kitchen-area-2-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "entry-porch-1",
+    "sourceFilename": "ENTRY PORCH 1.png",
+    "sourceSha256": "9c01297e9359042a1a81e653b31a0db41575fa42f18561aeab95f9aa3a8a91ae",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "entry",
+    "spaceName": "Entry porch",
+    "japanese": "玄関ポーチ",
+    "category": "Arrival",
+    "view": 1,
+    "caption": "Entry porch — View 01",
+    "alt": "Entry porch, supplied architectural render, perspective 1.",
+    "src": "/residence/entry-porch-1-1280.webp",
+    "fullSrc": "/residence/entry-porch-1-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/entry-porch-1-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/entry-porch-1-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/entry-porch-1-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "entry-porch-2",
+    "sourceFilename": "ENTRY PORCH 2.png",
+    "sourceSha256": "808a9e1dc0e1e53e7c0593092c88424a1d588495278321ce0483e474e08dc29b",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "entry",
+    "spaceName": "Entry porch",
+    "japanese": "玄関ポーチ",
+    "category": "Arrival",
+    "view": 2,
+    "caption": "Entry porch — View 02",
+    "alt": "Entry porch, supplied architectural render, perspective 2.",
+    "src": "/residence/entry-porch-2-1280.webp",
+    "fullSrc": "/residence/entry-porch-2-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/entry-porch-2-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/entry-porch-2-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/entry-porch-2-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "exterior-perspective-1",
+    "sourceFilename": "EXTERIOR PERSPECTIVE 1.png",
+    "sourceSha256": "a8269822674345dfca2547ab9e672a2d7b431608b01f7a01e8701612e05180ee",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "exterior",
+    "spaceName": "Exterior perspectives",
+    "japanese": "外観",
+    "category": "Arrival",
+    "view": 1,
+    "caption": "Exterior perspectives — View 01",
+    "alt": "Exterior perspectives, supplied architectural render, perspective 1.",
+    "src": "/residence/exterior-perspective-1-1280.webp",
+    "fullSrc": "/residence/exterior-perspective-1-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/exterior-perspective-1-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/exterior-perspective-1-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/exterior-perspective-1-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "exterior-perspective-2",
+    "sourceFilename": "EXTERIOR PERSPECTIVE 2.png",
+    "sourceSha256": "770b9b7fe9409c0e0892154e419fe3f54c477d57ff8d90ca52bdf78eef134b6f",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "exterior",
+    "spaceName": "Exterior perspectives",
+    "japanese": "外観",
+    "category": "Arrival",
+    "view": 2,
+    "caption": "Exterior perspectives — View 02",
+    "alt": "Exterior perspectives, supplied architectural render, perspective 2.",
+    "src": "/residence/exterior-perspective-2-1280.webp",
+    "fullSrc": "/residence/exterior-perspective-2-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/exterior-perspective-2-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/exterior-perspective-2-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/exterior-perspective-2-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "kitchen-area-1",
+    "sourceFilename": "KITCHEN AREA 1.png",
+    "sourceSha256": "d73570aa576c1282a27a7d2196da1384489da17b717ac009b0eca5d01d0a1f44",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "kitchen",
+    "spaceName": "Kitchen",
+    "japanese": "キッチン",
+    "category": "Shared spaces",
+    "view": 1,
+    "caption": "Kitchen — View 01",
+    "alt": "Kitchen, supplied architectural render, perspective 1.",
+    "src": "/residence/kitchen-area-1-1280.webp",
+    "fullSrc": "/residence/kitchen-area-1-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/kitchen-area-1-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/kitchen-area-1-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/kitchen-area-1-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "kitchen-area-2",
+    "sourceFilename": "KITCHEN AREA 2.png",
+    "sourceSha256": "727ce82a8ee90e775a9d6e3005cf033bd8cac46fbb95303fef6e6547728a5161",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "kitchen",
+    "spaceName": "Kitchen",
+    "japanese": "キッチン",
+    "category": "Shared spaces",
+    "view": 2,
+    "caption": "Kitchen — View 02",
+    "alt": "Kitchen, supplied architectural render, perspective 2.",
+    "src": "/residence/kitchen-area-2-1280.webp",
+    "fullSrc": "/residence/kitchen-area-2-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/kitchen-area-2-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/kitchen-area-2-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/kitchen-area-2-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "kitchen-area-3",
+    "sourceFilename": "KITCHEN AREA 3.png",
+    "sourceSha256": "3e4264f0226f0244c9506c00aef85f0d26bac4ccfd57fa9e2fe2dc58577e3174",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "kitchen",
+    "spaceName": "Kitchen",
+    "japanese": "キッチン",
+    "category": "Shared spaces",
+    "view": 3,
+    "caption": "Kitchen — View 03",
+    "alt": "Kitchen, supplied architectural render, perspective 3.",
+    "src": "/residence/kitchen-area-3-1280.webp",
+    "fullSrc": "/residence/kitchen-area-3-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/kitchen-area-3-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/kitchen-area-3-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/kitchen-area-3-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "laundry-area-1",
+    "sourceFilename": "LAUNDRY AREA 1.png",
+    "sourceSha256": "303335d5b95c0629da15a819895dc3fa8e9f769e80198943e58a6a95ccac36de",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "laundry",
+    "spaceName": "Laundry",
+    "japanese": "ランドリー",
+    "category": "Bathrooms & utility",
+    "view": 1,
+    "caption": "Laundry — View 01",
+    "alt": "Laundry, supplied architectural render, perspective 1.",
+    "src": "/residence/laundry-area-1-1280.webp",
+    "fullSrc": "/residence/laundry-area-1-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/laundry-area-1-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/laundry-area-1-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/laundry-area-1-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "laundrya-area-2",
+    "sourceFilename": "LAUNDRYA AREA 2.png",
+    "sourceSha256": "7d7ef532152f066eb8dafc5018a56522cb7119dff33be1afe972e2738fbcda6f",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "laundry",
+    "spaceName": "Laundry",
+    "japanese": "ランドリー",
+    "category": "Bathrooms & utility",
+    "view": 2,
+    "caption": "Laundry — View 02",
+    "alt": "Laundry, supplied architectural render, perspective 2.",
+    "src": "/residence/laundrya-area-2-1280.webp",
+    "fullSrc": "/residence/laundrya-area-2-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/laundrya-area-2-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/laundrya-area-2-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/laundrya-area-2-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "living-area-1",
+    "sourceFilename": "LIVING AREA 1.png",
+    "sourceSha256": "5c436236529ac5bb9eb328c66ba3c4ba2d8cd334f09935f9585f7c05a3f3cbc4",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "living",
+    "spaceName": "Living room",
+    "japanese": "リビング",
+    "category": "Shared spaces",
+    "view": 1,
+    "caption": "Living room — View 01",
+    "alt": "Living room, supplied architectural render, perspective 1.",
+    "src": "/residence/living-area-1-1280.webp",
+    "fullSrc": "/residence/living-area-1-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/living-area-1-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/living-area-1-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/living-area-1-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "living-area-2",
+    "sourceFilename": "LIVING AREA 2.png",
+    "sourceSha256": "369a46f733052213bc12ceba9a5b1e28565e409f92bdbed104905f40131b7768",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "living",
+    "spaceName": "Living room",
+    "japanese": "リビング",
+    "category": "Shared spaces",
+    "view": 2,
+    "caption": "Living room — View 02",
+    "alt": "Living room, supplied architectural render, perspective 2.",
+    "src": "/residence/living-area-2-1280.webp",
+    "fullSrc": "/residence/living-area-2-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/living-area-2-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/living-area-2-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/living-area-2-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "master-s-bedroom-area-1",
+    "sourceFilename": "MASTER'S BEDROOM AREA 1.png",
+    "sourceSha256": "cb106d89e6f06fd09c56ffd9c44124ef0bb487ee6d9d59757f22561f1a3b39c4",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "primary",
+    "spaceName": "Primary bedroom",
+    "japanese": "主寝室",
+    "category": "Private spaces",
+    "view": 1,
+    "caption": "Primary bedroom — View 01",
+    "alt": "Primary bedroom, supplied architectural render, perspective 1.",
+    "src": "/residence/master-s-bedroom-area-1-1280.webp",
+    "fullSrc": "/residence/master-s-bedroom-area-1-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/master-s-bedroom-area-1-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/master-s-bedroom-area-1-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/master-s-bedroom-area-1-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "master-s-bedroom-area-2",
+    "sourceFilename": "MASTER'S BEDROOM AREA 2.png",
+    "sourceSha256": "151bc936523eb08b08dbec81c94abea26ffbf8ec233951e800ac5cb35595e6fd",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "primary",
+    "spaceName": "Primary bedroom",
+    "japanese": "主寝室",
+    "category": "Private spaces",
+    "view": 2,
+    "caption": "Primary bedroom — View 02",
+    "alt": "Primary bedroom, supplied architectural render, perspective 2.",
+    "src": "/residence/master-s-bedroom-area-2-1280.webp",
+    "fullSrc": "/residence/master-s-bedroom-area-2-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/master-s-bedroom-area-2-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/master-s-bedroom-area-2-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/master-s-bedroom-area-2-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "master-s-bedroom-t-b-area-1",
+    "sourceFilename": "MASTER'S BEDROOM T & B AREA 1.png",
+    "sourceSha256": "263a2ff5baad15e3747df5eba2e2295980ba94de492e1a6dbbd7ba451eaddeb8",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "primary-bath",
+    "spaceName": "Primary bathroom",
+    "japanese": "主寝室のバスルーム",
+    "category": "Bathrooms & utility",
+    "view": 1,
+    "caption": "Primary bathroom — View 01",
+    "alt": "Primary bathroom, supplied architectural render, perspective 1.",
+    "src": "/residence/master-s-bedroom-t-b-area-1-1280.webp",
+    "fullSrc": "/residence/master-s-bedroom-t-b-area-1-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/master-s-bedroom-t-b-area-1-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/master-s-bedroom-t-b-area-1-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/master-s-bedroom-t-b-area-1-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "master-s-bedroom-t-b-area-2",
+    "sourceFilename": "MASTER'S BEDROOM T & B AREA 2.png",
+    "sourceSha256": "f14abc4d255a831126b419553d7d60a0d668b1a1fc3087f7770147a98eceb1df",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "primary-bath",
+    "spaceName": "Primary bathroom",
+    "japanese": "主寝室のバスルーム",
+    "category": "Bathrooms & utility",
+    "view": 2,
+    "caption": "Primary bathroom — View 02",
+    "alt": "Primary bathroom, supplied architectural render, perspective 2.",
+    "src": "/residence/master-s-bedroom-t-b-area-2-1280.webp",
+    "fullSrc": "/residence/master-s-bedroom-t-b-area-2-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/master-s-bedroom-t-b-area-2-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/master-s-bedroom-t-b-area-2-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/master-s-bedroom-t-b-area-2-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "master-s-bedroom-tv-stand-area",
+    "sourceFilename": "MASTER'S BEDROOM TV STAND AREA.png",
+    "sourceSha256": "3c5b89fde25400980dfca9729363e25546c4a6fbd8ac12968c36245d732b0c67",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "primary",
+    "spaceName": "Primary bedroom",
+    "japanese": "主寝室",
+    "category": "Private spaces",
+    "view": 3,
+    "caption": "Primary bedroom — View 03",
+    "alt": "Primary bedroom, supplied architectural render, perspective 3.",
+    "src": "/residence/master-s-bedroom-tv-stand-area-1280.webp",
+    "fullSrc": "/residence/master-s-bedroom-tv-stand-area-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/master-s-bedroom-tv-stand-area-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/master-s-bedroom-tv-stand-area-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/master-s-bedroom-tv-stand-area-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "ramp-1",
+    "sourceFilename": "RAMP 1.png",
+    "sourceSha256": "39db3d6d674cb367e3febf737acb0c3c4bcfef9c3a227a9b0048a57803b0d12e",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "ramp",
+    "spaceName": "Entrance ramp",
+    "japanese": "玄関スロープ",
+    "category": "Arrival",
+    "view": 1,
+    "caption": "Entrance ramp — View 01",
+    "alt": "Entrance ramp, supplied architectural render, perspective 1.",
+    "src": "/residence/ramp-1-1280.webp",
+    "fullSrc": "/residence/ramp-1-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/ramp-1-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/ramp-1-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/ramp-1-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "second-floor-hallway-area",
+    "sourceFilename": "SECOND FLOOR HALLWAY AREA.png",
+    "sourceSha256": "857d5aed964dc0b64b468cf8668c1a02cc567ac49ef9f4e4cc5c6fa2a5c6e60f",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "hallway",
+    "spaceName": "Second-floor hallway",
+    "japanese": "2階ホール",
+    "category": "Circulation",
+    "view": 1,
+    "caption": "Second-floor hallway — View 01",
+    "alt": "Second-floor hallway, supplied architectural render, perspective 1.",
+    "src": "/residence/second-floor-hallway-area-1280.webp",
+    "fullSrc": "/residence/second-floor-hallway-area-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/second-floor-hallway-area-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/second-floor-hallway-area-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/second-floor-hallway-area-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "stairs-area-1",
+    "sourceFilename": "STAIRS AREA 1.png",
+    "sourceSha256": "593e19ed2e84e467d6d17d4cf6aa3a45f3c6c1905888159c011af9752b9b85ca",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "stairs",
+    "spaceName": "Staircase",
+    "japanese": "階段",
+    "category": "Circulation",
+    "view": 1,
+    "caption": "Staircase — View 01",
+    "alt": "Staircase, supplied architectural render, perspective 1.",
+    "src": "/residence/stairs-area-1-1280.webp",
+    "fullSrc": "/residence/stairs-area-1-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/stairs-area-1-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/stairs-area-1-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/stairs-area-1-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "stairs-area-2",
+    "sourceFilename": "STAIRS AREA 2.png",
+    "sourceSha256": "a24bea6032087d90ec0e50c4e8bcc9829fc6a532dc27fc8c2794f38ed111af8c",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "stairs",
+    "spaceName": "Staircase",
+    "japanese": "階段",
+    "category": "Circulation",
+    "view": 2,
+    "caption": "Staircase — View 02",
+    "alt": "Staircase, supplied architectural render, perspective 2.",
+    "src": "/residence/stairs-area-2-1280.webp",
+    "fullSrc": "/residence/stairs-area-2-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/stairs-area-2-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/stairs-area-2-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/stairs-area-2-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "stairs-area-3",
+    "sourceFilename": "STAIRS AREA 3.png",
+    "sourceSha256": "c926e8606b7ec713b2f6198ae612dc8b9a88c18c7ab07af44658d11d4afdac2d",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "stairs",
+    "spaceName": "Staircase",
+    "japanese": "階段",
+    "category": "Circulation",
+    "view": 3,
+    "caption": "Staircase — View 03",
+    "alt": "Staircase, supplied architectural render, perspective 3.",
+    "src": "/residence/stairs-area-3-1280.webp",
+    "fullSrc": "/residence/stairs-area-3-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/stairs-area-3-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/stairs-area-3-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/stairs-area-3-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "walking-closet-area-1",
+    "sourceFilename": "WALKING CLOSET AREA 1.png",
+    "sourceSha256": "9538a835f05a45650e53cf5b4b8eb6a59ac0d87809e62fab025b6549af7ffeda",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "closet",
+    "spaceName": "Walk-in closet",
+    "japanese": "ウォークインクローゼット",
+    "category": "Private spaces",
+    "view": 1,
+    "caption": "Walk-in closet — View 01",
+    "alt": "Walk-in closet, supplied architectural render, perspective 1.",
+    "src": "/residence/walking-closet-area-1-1280.webp",
+    "fullSrc": "/residence/walking-closet-area-1-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/walking-closet-area-1-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/walking-closet-area-1-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/walking-closet-area-1-1920.webp"
+      }
+    ]
+  },
+  {
+    "id": "walking-closet-area-2",
+    "sourceFilename": "WALKING CLOSET AREA 2.png",
+    "sourceSha256": "9664b0e0a8c6d7ac0721494a708ac5cfc0f0ca731b6cef5a99591c4a9e728c85",
+    "width": 2560,
+    "height": 2188,
+    "spaceId": "closet",
+    "spaceName": "Walk-in closet",
+    "japanese": "ウォークインクローゼット",
+    "category": "Private spaces",
+    "view": 2,
+    "caption": "Walk-in closet — View 02",
+    "alt": "Walk-in closet, supplied architectural render, perspective 2.",
+    "src": "/residence/walking-closet-area-2-1280.webp",
+    "fullSrc": "/residence/walking-closet-area-2-2560.webp",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/residence/walking-closet-area-2-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/residence/walking-closet-area-2-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/residence/walking-closet-area-2-1920.webp"
+      }
+    ]
+  }
+]

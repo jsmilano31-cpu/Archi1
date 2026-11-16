@@ -1,69 +1,78 @@
-import './setup-dom';
-import assert from 'node:assert/strict';
-import { afterEach, test } from 'node:test';
-import { cleanup, fireEvent, render } from '@testing-library/react';
-import { FloorExplorer } from '../src/components/FloorExplorer';
-import { Gallery } from '../src/components/Gallery';
-import { project } from '../src/data/project';
-
+import "./setup-dom";
+import assert from "node:assert/strict";
+import { afterEach, test } from "node:test";
+import { cleanup, fireEvent, render } from "@testing-library/react";
+import { Gallery } from "../src/components/Gallery";
+import { images } from "../src/data/project";
 afterEach(cleanup);
-
-test('room list and marker select the matching details, then floor change clears the old selection', () => {
-  const view = render(<FloorExplorer floors={project.floors} rooms={project.rooms} />);
-  assert.ok(view.getByRole('heading', { name: 'Living room' }));
-  fireEvent.click(view.getByRole('button', { name: 'Kitchen & dining' }));
-  assert.ok(view.getByRole('heading', { name: 'Kitchen & dining' }));
-  assert.equal(view.getByRole('button', { name: 'Select Kitchen & dining' }).getAttribute('aria-pressed'), 'true');
-  fireEvent.click(view.getByRole('button', { name: 'Select The courtyard' }));
-  assert.ok(view.getByRole('heading', { name: 'The courtyard' }));
-  fireEvent.click(view.getByRole('tab', { name: /Upper floor/ }));
-  assert.ok(view.getByRole('heading', { name: 'Primary suite' }));
-  assert.equal(view.queryByRole('button', { name: 'Select The courtyard' }), null);
+test("all 48 perspectives are reachable in the complete collection", () => {
+  const v = render(<Gallery items={images} />);
+  fireEvent.click(v.getByRole("button", { name: "Browse all 48 views" }));
+  const collection = document.getElementById("all-perspectives")!;
+  assert.equal(collection.querySelectorAll("figure").length, 48);
+  for (const image of images)
+    assert.ok(collection.querySelector('img[alt="' + image.alt + '"]'));
 });
-
-test('floor tabs support arrow keys and zoom resets on floor change', () => {
-  const view = render(<FloorExplorer floors={project.floors} rooms={project.rooms} />);
-  fireEvent.click(view.getByRole('button', { name: 'Zoom in' }));
-  assert.ok(view.getByText('Selected Living room on Ground floor'));
-  assert.equal(view.getByText('125%').textContent, '125%');
-  fireEvent.keyDown(view.getByRole('tab', { name: /Ground floor/ }), { key: 'ArrowRight' });
-  const upper = view.getByRole('tab', { name: /Upper floor/ });
-  assert.equal(upper.getAttribute('aria-selected'), 'true');
-  assert.equal(document.activeElement, upper);
-  assert.ok(view.getByText('100%'));
-  assert.equal((view.getByRole('button', { name: 'Zoom out' }) as HTMLButtonElement).disabled, true);
+test("category and space selection reset to a valid first angle", () => {
+  const v = render(<Gallery items={images} />);
+  fireEvent.click(v.getByRole("button", { name: /Primary bedroom 主寝室/ }));
+  assert.ok(
+    v.getByRole("button", { name: "Enlarge: Primary bedroom — View 01" }),
+  );
+  fireEvent.click(v.getByRole("button", { name: "Next angle" }));
+  assert.ok(
+    v.getByRole("button", { name: "Enlarge: Primary bedroom — View 02" }),
+  );
+  fireEvent.click(v.getByRole("button", { name: "Arrival" }));
+  assert.ok(
+    v.getByRole("button", { name: "Enlarge: Exterior perspectives — View 01" }),
+  );
+  assert.equal(
+    v.queryByRole("button", { name: /Primary bedroom 主寝室/ }),
+    null,
+  );
 });
-
-test('missing render and empty floor data have purposeful fallbacks', () => {
-  const rooms = structuredClone(project.rooms);
-  delete rooms[0].image;
-  const view = render(<FloorExplorer floors={project.floors} rooms={rooms} />);
-  assert.ok(view.getByText('Render to follow'));
-  view.rerender(<FloorExplorer floors={[]} rooms={[]} />);
-  assert.ok(view.getByText('Floor drawings will be added here.'));
+test("angle navigation wraps and both similar balcony images remain independently selectable", () => {
+  const v = render(<Gallery items={images} />);
+  fireEvent.click(v.getByRole("button", { name: /^Balcony バルコニー/ }));
+  assert.equal(v.getAllByRole("button", { name: /^Balcony, angle/ }).length, 4);
+  fireEvent.click(v.getByRole("button", { name: "Previous angle" }));
+  assert.ok(v.getByRole("button", { name: "Enlarge: Balcony — View 04" }));
+  fireEvent.click(v.getByRole("button", { name: "Next angle" }));
+  assert.ok(v.getByRole("button", { name: "Enlarge: Balcony — View 01" }));
 });
-
-test('gallery filtering, lightbox next/previous and close update state', () => {
-  const view = render(<Gallery items={project.gallery} />);
-  fireEvent.click(view.getByRole('button', { name: 'Interior' }));
-  assert.equal(view.getAllByRole('button', { name: /^Enlarge:/ }).length, 2);
-  const open = view.getAllByRole('button', { name: /^Enlarge:/ })[0];
-  fireEvent.click(open);
-  const dialog = view.getByRole('dialog');
-  assert.equal(dialog.hasAttribute('open'), true);
-  assert.ok(view.getByText('1 / 2'));
-  fireEvent.keyDown(dialog, { key: 'ArrowRight' });
-  assert.ok(view.getByText('2 / 2'));
-  fireEvent.click(view.getByRole('button', { name: 'Previous image' }));
-  assert.ok(view.getByText('1 / 2'));
-  fireEvent.click(view.getByRole('button', { name: 'Close gallery' }));
-  assert.equal(dialog.hasAttribute('open'), false);
-  assert.equal(document.activeElement, open);
+test("lightbox loads full-resolution image only when open and restores focus on close", () => {
+  const v = render(<Gallery items={images} />);
+  assert.equal(document.querySelectorAll('img[src$="-2560.webp"]').length, 0);
+  const opener = v.getByRole("button", {
+    name: "Enlarge: Living room — View 01",
+  });
+  fireEvent.click(opener);
+  const d = v.getByRole("dialog");
+  assert.ok(d.hasAttribute("open"));
+  assert.equal(d.querySelectorAll('img[src$="-2560.webp"]').length, 1);
+  fireEvent.keyDown(d, { key: "ArrowRight" });
+  assert.ok(d.textContent?.includes("Living room — View 02"));
+  fireEvent.click(v.getByRole("button", { name: "Close gallery" }));
+  assert.equal(document.activeElement, opener);
+  assert.equal(document.querySelectorAll('img[src$="-2560.webp"]').length, 0);
 });
-
-test('one-image gallery hides inactive navigation controls', () => {
-  const view = render(<Gallery items={[project.gallery[0]]} />);
-  fireEvent.click(view.getByRole('button', { name: /^Enlarge:/ }));
-  assert.equal(view.queryByRole('button', { name: 'Next image' }), null);
-  assert.equal(view.queryByRole('button', { name: 'Previous image' }), null);
+test("single-perspective spaces disable angle navigation", () => {
+  const v = render(<Gallery items={images} />);
+  fireEvent.click(v.getByRole("button", { name: /^Entrance ramp/ }));
+  assert.equal(
+    (v.getByRole("button", { name: "Next angle" }) as HTMLButtonElement)
+      .disabled,
+    true,
+  );
+});
+test("mobile swipe changes angle without opening a modal", () => {
+  const v = render(<Gallery items={images} />);
+  const image = v.getByRole("button", {
+    name: "Enlarge: Living room — View 01",
+  });
+  fireEvent.touchStart(image, { touches: [{ clientX: 200 }] });
+  fireEvent.touchEnd(image, { changedTouches: [{ clientX: 80 }] });
+  assert.ok(v.getByRole("button", { name: "Enlarge: Living room — View 02" }));
+  assert.equal(v.queryByRole("dialog"), null);
 });

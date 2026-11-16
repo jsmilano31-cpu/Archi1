@@ -1,13 +1,44 @@
-'use client';
-
-import Image from 'next/image';
-import { useState } from 'react';
-import { ImageOff } from 'lucide-react';
-
-export function MediaImage({ src, alt, priority = false, className = '', position }: {
-  src: string; alt: string; priority?: boolean; className?: string; position?: string;
+"use client";
+/* Pre-encoded responsive images support static export without an image server. */
+/* eslint-disable @next/next/no-img-element */
+import { useState } from "react";
+import type { ArchitecturalImage } from "@/types/architecture";
+export function MediaImage({
+  image,
+  priority = false,
+  full = false,
+  sizes = "(max-width:767px) 100vw, 65vw",
+}: {
+  image: ArchitecturalImage;
+  priority?: boolean;
+  full?: boolean;
+  sizes?: string;
 }) {
   const [failed, setFailed] = useState(false);
-  if (failed) return <div className={`image-fallback ${className}`} role="img" aria-label={alt}><ImageOff size={28} /><span>Image unavailable</span></div>;
-  return <Image src={src} alt={alt} fill priority={priority} sizes="(max-width: 767px) 100vw, 80vw" className={className} style={{ objectFit: 'cover', objectPosition: position }} onError={() => setFailed(true)} />;
+  if (failed)
+    return (
+      <div className="image-fallback" role="img" aria-label={image.alt}>
+        Perspective unavailable.
+        <button onClick={() => setFailed(false)}>Try again</button>
+      </div>
+    );
+  return (
+    <img
+      src={full ? image.fullSrc : image.src}
+      srcSet={
+        full
+          ? undefined
+          : image.sources.map((s) => s.src + " " + s.width + "w").join(", ")
+      }
+      sizes={full ? undefined : sizes}
+      width={image.width}
+      height={image.height}
+      alt={image.alt}
+      loading={priority || full ? "eager" : "lazy"}
+      fetchPriority={priority ? "high" : "auto"}
+      decoding="async"
+      draggable={false}
+      onError={() => setFailed(true)}
+    />
+  );
 }
