@@ -2,14 +2,14 @@
 /* Pre-encoded responsive images support static export without an image server. */
 /* eslint-disable @next/next/no-img-element */
 import { useState } from "react";
-import type { ArchitecturalImage } from "@/types/architecture";
+import type { PresentationImage } from "@/types/architecture";
 export function MediaImage({
   image,
   priority = false,
   full = false,
   sizes = "(max-width:767px) 100vw, 65vw",
 }: {
-  image: ArchitecturalImage;
+  image: PresentationImage;
   priority?: boolean;
   full?: boolean;
   sizes?: string;
@@ -18,7 +18,7 @@ export function MediaImage({
   if (failed)
     return (
       <div className="image-fallback" role="img" aria-label={image.alt}>
-        Perspective unavailable.
+        Image unavailable.
         <button onClick={() => setFailed(false)}>Try again</button>
       </div>
     );

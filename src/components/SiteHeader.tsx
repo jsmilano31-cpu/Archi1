@@ -4,6 +4,7 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 const links = [
   ["hero", "The home"],
   ["vision", "Living spaces"],
+  ["layout", "Floor plans"],
   ["floorplans", "Explore"],
   ["materials", "Details"],
 ];

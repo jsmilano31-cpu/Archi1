@@ -1,9 +1,10 @@
 import { ArrowDown, ArrowUpRight, ArrowRight } from "lucide-react";
-import { project, images, arrival, renderByFile } from "@/data/project";
+import { project, arrival, renderByFile } from "@/data/project";
 import { MediaImage } from "@/components/MediaImage";
 import { SiteHeader } from "@/components/SiteHeader";
 import { Motion } from "@/components/Motion";
-import { Gallery } from "@/components/Gallery";
+import { FloorPlans } from "@/components/FloorPlans";
+import { ResidenceExplorer, SpaceGallery } from "@/components/ResidenceExplorer";
 function Label({
   number,
   children,
@@ -23,6 +24,7 @@ export default function Home() {
   return (
     <Motion>
       <SiteHeader />
+      <ResidenceExplorer>
       <main id="main">
         <section id="hero" className="hero" aria-labelledby="hero-title">
           <div className="hero-copy">
@@ -141,16 +143,24 @@ export default function Home() {
             ))}
           </div>
         </section>
+        <section id="layout" className="section floorplan-section" aria-labelledby="layout-title">
+          <Label number="04">Floor plans / <span lang="ja">間取り</span></Label>
+          <div className="split-heading">
+            <h2 id="layout-title" data-reveal>A sense of space.<br /><em>A place for everything.</em></h2>
+            <p>See how the home comes together across two levels. Choose a floor, take a closer look, then step into the rooms that catch your eye.</p>
+          </div>
+          <FloorPlans />
+        </section>
         <section
           id="floorplans"
           className="section explore-section"
           aria-labelledby="explore-title"
         >
-          <Label number="04">
+          <Label number="05">
             Explore by space / <span lang="ja">空間を巡る</span>
           </Label>
           <div className="split-heading">
-            <h2 id="explore-title" data-reveal>
+            <h2 id="explore-title" tabIndex={-1} data-reveal>
               Explore
               <br />
               <em>your home.</em>
@@ -160,14 +170,14 @@ export default function Home() {
               view, from the entrance to the balcony, at your own pace.
             </p>
           </div>
-          <Gallery items={images} />
+          <SpaceGallery />
         </section>
         <section
           id="interiors"
           className="section retreat"
           aria-labelledby="retreat-title"
         >
-          <Label number="05">
+          <Label number="06">
             A quieter rhythm / <span lang="ja">穏やかな時間</span>
           </Label>
           <div className="split-heading">
@@ -199,7 +209,7 @@ export default function Home() {
           aria-labelledby="balcony-title"
         >
           <div className="balcony-heading">
-            <Label number="06">
+            <Label number="07">
               Room to breathe / <span lang="ja">開放感のあるひととき</span>
             </Label>
             <h2 id="balcony-title" data-reveal>
@@ -225,7 +235,7 @@ export default function Home() {
           className="section details"
           aria-labelledby="details-title"
         >
-          <Label number="07">
+          <Label number="08">
             A shared palette / <span lang="ja">素材と色の調和</span>
           </Label>
           <div className="details-grid">
@@ -266,7 +276,7 @@ export default function Home() {
           </div>
         </section>
         <section id="finale" className="finale" aria-labelledby="finale-title">
-          <Label number="08">
+          <Label number="09">
             The next chapter / <span lang="ja">これからの暮らし</span>
           </Label>
           <h2 id="finale-title" data-reveal>
@@ -280,11 +290,12 @@ export default function Home() {
           </a>
         </section>
       </main>
+      </ResidenceExplorer>
       <footer className="site-footer">
         <a href="#hero" className="wordmark">
           THE RESIDENCE
         </a>
-        <span>Architectural design presentation · 48 perspectives</span>
+        <span>Architectural design presentation · 48 perspectives · 2 floor plans</span>
         <a href="#hero">Back to top ↑</a>
         <p>
           Supplied architectural renders illustrate the proposed design.

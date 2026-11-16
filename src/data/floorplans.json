@@ -1,0 +1,80 @@
+[
+  {
+    "id": "ground",
+    "sourceFilename": "GROUND FLOOR.png",
+    "sourceSha256": "653bb89cc3e9c356aeb2bec4c942c73d25bcf52278f6c4df6edea2e8902ebdce",
+    "title": "Ground Floor",
+    "japanese": "1階",
+    "roomIds": [
+      "entry",
+      "ramp",
+      "garage",
+      "living",
+      "dining",
+      "kitchen",
+      "secondary-kitchen",
+      "laundry",
+      "primary",
+      "primary-bath",
+      "closet",
+      "bedroom-1",
+      "common-bath",
+      "stairs"
+    ],
+    "width": 2560,
+    "height": 1920,
+    "src": "/floorplans/ground-1280.webp",
+    "fullSrc": "/floorplans/ground-original.png",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/floorplans/ground-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/floorplans/ground-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/floorplans/ground-1920.webp"
+      }
+    ],
+    "alt": "Ground Floor — supplied furnished layout of the residence"
+  },
+  {
+    "id": "second",
+    "sourceFilename": "SECOND FLOOR.png",
+    "sourceSha256": "fde84af9242db75835ad4dd23c933746f2fbd3eff8b4b532f6b92cdc4b3ed171",
+    "title": "Second Floor",
+    "japanese": "2階",
+    "roomIds": [
+      "bedroom-2",
+      "bedroom-3",
+      "bedroom-4",
+      "bar",
+      "hallway",
+      "upper-bath",
+      "stairs",
+      "balcony"
+    ],
+    "width": 2560,
+    "height": 1920,
+    "src": "/floorplans/second-1280.webp",
+    "fullSrc": "/floorplans/second-original.png",
+    "sources": [
+      {
+        "width": 640,
+        "src": "/floorplans/second-640.webp"
+      },
+      {
+        "width": 1280,
+        "src": "/floorplans/second-1280.webp"
+      },
+      {
+        "width": 1920,
+        "src": "/floorplans/second-1920.webp"
+      }
+    ],
+    "alt": "Second Floor — supplied furnished layout of the residence"
+  }
+]

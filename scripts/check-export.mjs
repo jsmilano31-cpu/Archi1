@@ -8,6 +8,7 @@ for (const id of [
   "hero",
   "vision",
   "exterior",
+  "layout",
   "floorplans",
   "interiors",
   "experience",
@@ -44,6 +45,13 @@ for (const image of manifest)
   ])
     await access(resolve("out", "." + path));
 await access("out/404.html");
+const plans = JSON.parse(await readFile("out/floorplans/manifest.json", "utf8"));
+assert.equal(plans.length, 2);
+assert.ok(doc.querySelector('#layout img[src^="/floorplans/"]'));
+for (const plan of plans) {
+  for (const path of [plan.fullSrc, ...plan.sources.map((source) => source.src)])
+    await access(resolve("out", "." + path));
+}
 console.log(
-  "Verified 8 sections, 48 supplied renders, all 192 responsive assets, anchors, initial media loading and 404 output.",
+  "Verified 9 sections, 48 renders, 192 render assets, both floor plans and their assets, anchors, initial media loading and 404 output.",
 );

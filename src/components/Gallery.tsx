@@ -4,9 +4,9 @@ import { ArrowLeft, ArrowRight, X, Expand } from "lucide-react";
 import { categories, spaces } from "@/data/project";
 import type { ArchitecturalImage } from "@/types/architecture";
 import { MediaImage } from "./MediaImage";
-export function Gallery({ items }: { items: ArchitecturalImage[] }) {
+export function Gallery({ items, initialSpaceId = "living" }: { items: ArchitecturalImage[]; initialSpaceId?: string }) {
   const [category, setCategory] = useState("All spaces");
-  const [spaceId, setSpaceId] = useState("living");
+  const [spaceId, setSpaceId] = useState(initialSpaceId);
   const [angle, setAngle] = useState(0);
   const [modal, setModal] = useState<number | null>(null);
   const [expanded, setExpanded] = useState(false);

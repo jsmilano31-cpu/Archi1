@@ -15,3 +15,13 @@ export type ArchitecturalImage = {
   alt: string;
   caption: string;
 };
+
+export type PresentationImage = Pick<ArchitecturalImage, "src" | "fullSrc" | "sources" | "width" | "height" | "alt">;
+export type FloorPlan = PresentationImage & {
+  id: string;
+  sourceFilename: string;
+  sourceSha256: string;
+  title: string;
+  japanese: string;
+  roomIds: string[];
+};
