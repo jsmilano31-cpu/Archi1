@@ -3,8 +3,31 @@ import assert from "node:assert/strict";
 import { afterEach, test } from "node:test";
 import { cleanup, fireEvent, render } from "@testing-library/react";
 import { Gallery } from "../src/components/Gallery";
-import { images } from "../src/data/project";
+import { images, spaces } from "../src/data/project";
 afterEach(cleanup);
+test("every supplied image can be selected through the space and angle controls", () => {
+  const view = render(<Gallery items={images} />);
+  const selector = view.getByRole("combobox");
+  let selectedCount = 0;
+  for (const space of spaces) {
+    fireEvent.change(selector, { target: { value: space.id } });
+    const perspectives = images.filter((image) => image.spaceId === space.id);
+    for (const [index, image] of perspectives.entries()) {
+      fireEvent.click(view.getByRole("button", {
+        name: `${space.name}, angle ${index + 1}`,
+      }));
+      const displayed = view.getByRole("button", {
+        name: `Enlarge: ${image.caption}`,
+      }).querySelector("img");
+      assert.ok(displayed, image.sourceFilename);
+      assert.equal(displayed.getAttribute("src"), image.src);
+      assert.equal(displayed.getAttribute("alt"), image.alt);
+      assert.ok(displayed.getAttribute("srcset")?.includes(image.sources[0].src));
+      selectedCount++;
+    }
+  }
+  assert.equal(selectedCount, 48);
+});
 test("all 48 perspectives are reachable in the complete collection", () => {
   const v = render(<Gallery items={images} />);
   fireEvent.click(v.getByRole("button", { name: "Browse all 48 views" }));
