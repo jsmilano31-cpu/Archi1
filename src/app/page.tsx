@@ -1,6 +1,7 @@
 import { ArrowDown, ArrowUpRight, ArrowRight } from "lucide-react";
 import { project, arrival, renderByFile } from "@/data/project";
 import { MediaImage } from "@/components/MediaImage";
+import { MoodBoard } from "@/components/MoodBoard";
 import { SiteHeader } from "@/components/SiteHeader";
 import { Motion } from "@/components/Motion";
 import { FloorPlans } from "@/components/FloorPlans";
@@ -238,42 +239,7 @@ export default function Home() {
           <Label number="08">
             A shared palette / <span lang="ja">素材と色の調和</span>
           </Label>
-          <div className="details-grid">
-            <figure data-reveal>
-              <MediaImage image={renderByFile("AESTHETICS 1.png")} />
-            </figure>
-            <div>
-              <h2 id="details-title" data-reveal>
-                Warmth.
-                <br />
-                Contrast.
-                <br />
-                <em>Character.</em>
-              </h2>
-              <p>
-                The same visual language carries from the facade into the home:
-                light masonry, timber-toned surfaces, dark framing, and soft
-                neutral interiors.
-              </p>
-              <div className="swatches">
-                {[
-                  ["masonry", "Light masonry"],
-                  ["timber", "Timber tones"],
-                  ["charcoal", "Dark accents"],
-                  ["ivory", "Soft neutrals"],
-                ].map(([c, label]) => (
-                  <div key={c}>
-                    <span className={c} />
-                    <small>{label}</small>
-                  </div>
-                ))}
-              </div>
-              <p className="fine-print">
-                Finish descriptions refer to the appearance of the supplied
-                renders. Final material specifications are not stated.
-              </p>
-            </div>
-          </div>
+          <MoodBoard />
         </section>
         <section id="finale" className="finale" aria-labelledby="finale-title">
           <Label number="09">
